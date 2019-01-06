@@ -5,3 +5,4 @@ This program has the implementation of sorting of different elements using the b
 * Bubble Sort
 * Quick Sort
 * Selection Sort
+* Insertion Sort
