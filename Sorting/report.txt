@@ -1,0 +1,48 @@
+ALGORTHMS		N		Comparisons			Seconds
+MERGE			1			0			3.0994415283203125e-06
+SELECTION		1			1			6.67572021484375e-06
+INSERTION		1			0			4.0531158447265625e-06
+QUICK			1			0			2.6226043701171875e-06
+
+
+ALGORTHMS		N		Comparisons			Seconds
+MERGE			10			9			6.461143493652344e-05
+SELECTION		10			55			2.6702880859375e-05
+INSERTION		10			29			1.7642974853515625e-05
+QUICK			10			29			1.3828277587890625e-05
+
+
+ALGORTHMS		N		Comparisons			Seconds
+MERGE			100			97			0.0005369186401367188
+SELECTION		100			5050			0.0008666515350341797
+INSERTION		100			2338			0.0010344982147216797
+QUICK			100			2338			0.00089263916015625
+
+
+ALGORTHMS		N		Comparisons			Seconds
+MERGE			1000			997			0.006167411804199219
+SELECTION		1000			500500			0.08862757682800293
+INSERTION		1000			246284			0.1146697998046875
+QUICK			1000			246284			0.12105011940002441
+
+
+ALGORTHMS		N		Comparisons			Seconds
+MERGE			10000			9999			0.0860280990600586
+SELECTION		10000			50005000			8.640965461730957
+INSERTION		10000			24910078			12.284779787063599
+QUICK			10000			24910078			12.151124000549316
+
+
+The time complexities of the sorting algorthims are like below:
+			worst case time		average case time	best case time		worst case space
+ Selection sort		O(n2)			O(n2)			O(n2)			O(n)
+ Insertion sort		O(n2)			O(n2)			O(n)			O(n)
+ Quick sort		O(n2)			O(nlogn)		O(nlogn)		O(logn)
+ Merge sort		O(nlogn)		O(nlogn)		O(nlogn)		O(n)
+
+
+The above observations tell that for smaller data all the algorithms are sorting the elements almost the same time. But we can observe that, as the data set size increases, the time taken to sort the elements goes up exponentially except for merge sort. Merge sort is the algorithm which has least number of comaprisions and returns the output in most efficient way. The problem with merge sort is that it requires more space than other algortihms. Where as the Selection sort is the worse algorithm in terms of time among others since it always has O(n2) and high number of comparisions.  Insertion sort is good only for sorting small arrays. However, being an O(n2) algorithm, it becomes very slow very quick when the size of the array increases. 
+
+The number of comparisions made are increasing exponentially for all the algorithms except merge sort. This shows that the merge sort will take around 13 to 15 seconds to run on 10^6 elements and Selection Sort will take almost 200 to 210 seconds to sort the elements. The comparisions are very high which makes it not a good idea to use selection sort for the larger sets where as merge sort still works reasonably
+
+
